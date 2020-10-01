@@ -3,13 +3,13 @@ class Config {
 
 	getThemeMode() {
 		const themeModes = {
-			'light': {
-				name: 'Light',
-				icon: 'light-mode'
-			},
 			'dark': {
 				name: 'Dark',
 				icon: 'dark-mode'
+			},
+			'light': {
+				name: 'Light',
+				icon: 'light-mode'
 			},
 			'auto': {
 				name: 'Auto',
@@ -56,6 +56,16 @@ class Config {
 	getSearchEngines() {
 
 		const searchEngines = {
+			'duckduckgo': {
+				name: 'Duckduckgo',
+				prefix: 'https://duckduckgo.com/?q=',
+				icon: 'duckduckgo'
+			},
+			'google': {
+				name: 'Google',
+				prefix: 'https://www.google.com/search?q=',
+				icon: 'google'
+			},
 			'startpage': {
 				name: 'Startpage',
 				prefix: 'https://www.startpage.com/do/dsearch?query=',
@@ -71,20 +81,10 @@ class Config {
 				prefix: 'https://www.ecosia.org/search?q=',
 				icon: 'ecosia'
 			},
-			'duckduckgo': {
-				name: 'Duckduckgo',
-				prefix: 'https://duckduckgo.com/?q=',
-				icon: 'duckduckgo'
-			},
 			'yahoo': {
 				name: 'Yahoo',
 				prefix: 'https://search.yahoo.com/search?p=',
 				icon: 'yahoo'
-			},
-			'google': {
-				name: 'Google',
-				prefix: 'https://www.google.com/search?q=',
-				icon: 'google'
 			},
 			'bing': {
 				name: 'Bing',
@@ -113,28 +113,10 @@ class Config {
 				category: 'development'
 			},
 			{
-				site: 'Facebook',
-				icon: 'facebook',
-				url: 'https://facebook.com/',
-				category: 'social'
-			},
-			{
-				site: 'Gmail',
-				icon: 'gmail',
-				url: 'https://mail.google.com/',
-				category: 'social'
-			},
-			{
 				site: 'Youtube',
 				icon: 'youtube',
 				url: 'https://youtube.com/',
 				category: 'media'
-			},
-			{
-				site: 'Google Drive',
-				icon: 'gdrive',
-				url: 'https://drive.google.com/',
-				category: 'cloud'
 			},
 			{
 				site: 'Twitter',
@@ -143,28 +125,10 @@ class Config {
 				category: 'social'
 			},
 			{
-				site: 'Instagram',
-				icon: 'instagram',
-				url: 'https://instagram.com/',
-				category: 'social'
-			},
-			{
-				site: 'Bitbucket',
-				icon: 'bitbucket',
-				url: 'https://bitbucket.org/',
-				category: 'development'
-			},
-			{
 				site: 'Gitlab',
 				icon: 'gitlab',
 				url: 'https://gitlab.com/',
 				category: 'development'
-			},
-			{
-				site: 'Deviantart',
-				icon: 'deviantart',
-				url: 'https://deviantart.com/',
-				category: 'design'
 			},
 			{
 				site: 'Duckduckgo',
@@ -189,30 +153,6 @@ class Config {
 				icon: 'wikipedia',
 				url: 'https://wikipedia.org/',
 				category: 'information'
-			},
-			{
-				site: 'Unsplash',
-				icon: 'unsplash',
-				url: 'https://unsplash.com/',
-				category: 'design'
-			},
-			{
-				site: 'Twitch',
-				icon: 'twitch',
-				url: 'https://twitch.tv/',
-				category: 'media'
-			},
-			{
-				site: 'Yahoo',
-				icon: 'yahoo',
-				url: 'https://mail.yahoo.com/',
-				category: 'search engine'
-			},
-			{
-				site: 'Bing',
-				icon: 'bing',
-				url: 'https://bing.com',
-				category: 'search engine'
 			},
 			{
 				site: 'Material.io',
@@ -396,35 +336,15 @@ class Config {
 				url: 'https://github.com/'
 			},
 			{
-				site: 'Facebook',
-				icon: 'facebook',
-				url: 'https://facebook.com/'
-			},
-			{
-				site: 'Gmail',
-				icon: 'gmail',
-				url: 'https://mail.google.com/'
-			},
-			{
 				site: 'Youtube',
 				icon: 'youtube',
 				url: 'https://youtube.com/'
-			},
-			{
-				site: 'GDrive',
-				icon: 'gdrive',
-				url: 'https://drive.google.com/'
 			},
 			{
 				site: 'Twitter',
 				icon: 'twitter',
 				url: 'https://twitter.com/'
 			},
-			{
-				site: 'Material.io',
-				icon: 'materialio',
-				url: 'https://material.io/'
-			}
 		];
 
 		return panelSites;
